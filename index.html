@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adote um Amigo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="imgs/favicon-32x32.png" type="image/x-icon">
+ 
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Adote um Amigo</h1>
+
+      <div class="menu-mobile" onclick="trocarMenu()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+
+      <ul class="menu-desktop">
+        <li><a href="#pets">Pets</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+ <section class="hero">
+  <div class="hero-conteudo">
+    <div class="hero-texto">
+      <h2>Adote um amigo de quatro patas</h2>
+      <p>Encontre companheiros leais esperando por um lar cheio de amor.</p>
+      <a href="#pets" class="botao">Adote Agora</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://png.pngtree.com/png-clipart/20241124/original/pngtree-dogs-and-cats-png-image_17289951.png" alt="animais felizes">
+    </div>
+  </div>
+</section>
+
+  <section id="pets" class="galeria">
+    <h2>Pets para Adoção</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://img.freepik.com/fotos-gratis/gato-curioso-tricolor_181624-44964.jpg?semt=ais_hybrid&w=740" alt="Gata tricolor">
+        <h3>Maria das graças</h3>
+        <p>2 anos, carinhosa e tranquila.</p>
+      </div>
+      <div class="card">
+        <img src="https://dicascaninas.com.br/wp-content/uploads/2-3.jpg" alt="Cachorro caramelo feliz">
+        <h3>Horácio</h3>
+        <p>3 anos, brincalhão e companheiro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>Conectamos animais abandonados com pessoas dispostas a dar amor e um lar.</p>
+    <img src="imgs/pessoas e animais.png" alt="pessoas com animais">
+    <p>Nosso objetivo é promover a adoção responsável e conscientizar sobre a importância de cuidar dos animais.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <form id="formulario">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <input 
+        type="tel" 
+        id="telefone" 
+        placeholder="Seu telefone" 
+        required pattern="\d{10,11}" title="Digite um telefone válido com DDD">
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adote um Amigo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
