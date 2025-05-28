@@ -27,9 +27,9 @@ Site responsivo para adoção de animais domésticos, desenvolvido como projeto 
 ```
 projeto/
 ├── index.html
-├── css/style.css
-├── js/main.js
-└── images/
+├── style.css
+├── script.js
+└── imgs/
 ```
 
 ## Recursos Implementados
